@@ -1,0 +1,13 @@
+Steps/Decisions
+
+For completing the assignement I have desided to use Javascript.
+
+In order to have an OOP environment I'll add a TypeScript support.
+
+Initially, I wanted to complete it with java and started working on it a bit. But later I realized that I want to add some
+visualization possibility. Using java's swing would be a headace so I decided to use Javascript, more specifically
+ReactJs library of it to easly create a beautifull visualization for it on web. 
+
+I even though of hosting it on some free service (Digital ocean) and since the project's goal is to generate pseudo-random 
+numbers, I may even create an API for our application hosted on Digital ocean that would return a pseudo-random number every
+time it is called (the inner implementation of course would be with the solution of our assignement).

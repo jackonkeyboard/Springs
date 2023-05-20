@@ -1,4 +1,4 @@
-Steps/Decisions
+Project Steps/Decisions
 
 For completing the assignement I have desided to use Javascript.
 

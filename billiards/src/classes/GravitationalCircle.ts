@@ -1,38 +1,23 @@
 import { Ball } from "./Ball";
 import { Momentum } from "./Momentum";
 import { Point } from "./Point";
+import { Circle } from "./Circle";
 
-export class GravitationalCircle{
-    private count: number = 0;
-    private center: Point;
-    private ball: Ball;
-    private radius: number;
+export class GravitationalCircle extends Circle{
     private G: number = 0.01;
     private t: number = 0;
 
     constructor(p: Point, radius: number, ball: Ball){
-        this.center = p;
-        this.radius = radius;
-        this.ball = ball;
-    }
-
-    public isWithinCircle(p: Point): boolean{
-        return this.center.dist(p) < this.radius;
-    }
-
-    public isOnCircle(p: Point): boolean{
-        return Math.abs(this.radius - this.center.dist(p)) <= 0.01;
-    }
-
-    public isOutOfCircle(p: Point): boolean{
-        return this.center.dist(p) > this.radius;
+        super(p, radius, ball);
+        this.G = 0.01;
+        this.t = 0;
     }
 
     public nextT(){
         this.t += 0.00001;
     }
 
-    public next(): Ball | null{
+    public override next(): Ball | null{
         if(this.count >= 40){
             return null;
         }

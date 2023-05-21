@@ -3,10 +3,10 @@ import { Momentum } from "./Momentum";
 import { Point } from "./Point";
 
 export class Circle{
-    private count: number = 0;
-    private center: Point;
-    private ball: Ball;
-    private radius: number;
+    protected count: number = 0;
+    protected center: Point;
+    protected ball: Ball;
+    protected radius: number;
 
     constructor(p: Point, radius: number, ball: Ball){
         this.center = p;

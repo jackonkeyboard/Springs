@@ -1,0 +1,17 @@
+Run 40 observations and save only hits on lines, take L as 2 (r is 1)
+Initial ball cordinate:  0.0023 0.0089
+Initial ball momentum: 0.019 0.002
+
+-0.9745382333640797
+0.23814832666049235
+0.7598833125570644
+0.18323089307798918
+-0.7704840099258744
+0.7477290238652605
+0.5080204964359514
+-0.06771301105978002
+0.11886614003709914
+0.6303941228211336
+
+
+For 40 hits only 10 above were on lines (saves only x cordinate since y is either 1 or -1)
